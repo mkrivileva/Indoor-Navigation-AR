@@ -15,6 +15,7 @@
         private bool trackingStarted = false;
         public void Start()
         {
+			Debug.Log("Start tracking");
             m_prevARPosePosition = Vector3.zero;
         }
         public void Update()

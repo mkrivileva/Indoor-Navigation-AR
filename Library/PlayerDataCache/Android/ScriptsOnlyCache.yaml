@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AudioManager
     - ChangeScene
     - DistanceTool
     - GoogleARCore.ARCoreBackgroundRenderer
@@ -9,9 +8,6 @@ ScriptsOnlyBuild:
     - GoogleARCore.ARCoreSessionConfig
     - GoogleARCore.HelloAR.HelloARController
     - NavigationController
-    - PathDebugger
-    - ReceiveResult
-    - SpeechRecognition
     - UnityEngine.AI.NavMeshModifier
     - UnityEngine.AI.NavMeshSurface
     Unity.2D.Tilemap.Editor.dll:
@@ -22,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -78,11 +75,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10010}
     - Class: 114
-      Script: {instanceID: 10028}
-    - Class: 114
       Script: {instanceID: 10060}
-    - Class: 114
-      Script: {instanceID: 10120}
     - Class: 114
       Script: {instanceID: 10210}
     - Class: 114
@@ -102,8 +95,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11008}
     - Class: 114
-      Script: {instanceID: 11194}
-    - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
       Script: {instanceID: 11504}
@@ -113,8 +104,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11828}
     - Class: 114
       Script: {instanceID: 12142}
-    - Class: 114
-      Script: {instanceID: 12304}
     - Class: 114
       Script: {instanceID: 12330}
     - Class: 114
@@ -130,8 +119,6 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 195
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -331,12 +318,6 @@ ScriptsOnlyBuild:
     className: NetworkIdentity
   - hash:
       serializedVersion: 2
-      Hash: 7d71c6ac3b1db75f3799f45080e12660
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -371,24 +352,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransform
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpeechRecognition
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: bd46371fd5f7e2513f915be0ea5db232
@@ -451,12 +414,6 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 632cee63af197ba9c574eacb86ca6348
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
       Hash: 3f0b469d844365c00a63de0437c9b29e
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -473,12 +430,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReceiveResult
   - hash:
       serializedVersion: 2
       Hash: 1d12779542075ff8b4dcc2b638d0fb3c
@@ -583,7 +534,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 2e321caea01d252e3e40cacbba808933
+      Hash: 489fea80d75a72b25e3326e69722a4b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NavigationController
@@ -713,12 +664,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DistanceTool
-  - hash:
-      serializedVersion: 2
-      Hash: b2eb34119c60550967903a6571c88205
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioCommands
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -965,12 +910,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
-  - hash:
-      serializedVersion: 2
-      Hash: 62debc0430cd11393be4838f33d74498
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PathDebugger
   - hash:
       serializedVersion: 2
       Hash: 20eeaeae829475b5e354d1f626c51a2b
