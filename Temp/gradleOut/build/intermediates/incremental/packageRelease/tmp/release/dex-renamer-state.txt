@@ -1,0 +1,4 @@
+#Fri Apr 17 19:42:11 SAMT 2020
+base.0=/home/maria/gitProjects/myFlat/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
