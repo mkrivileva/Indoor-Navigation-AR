@@ -57,7 +57,7 @@
                 // Set the pose rotation to be used in the CameraFollow script
                 //
 
-                //m_firstPersonCamera.GetComponent<FollowTarget>().targetRot = Frame.Pose.rotation;
+                m_firstPersonCamera.GetComponent<FollowTarget>().targetRot = Frame.Pose.rotation;
             }
         }
         private void _QuitOnConnectionErrors()

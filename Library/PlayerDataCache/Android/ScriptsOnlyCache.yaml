@@ -16,9 +16,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -35,7 +38,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkIdentity
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -69,47 +72,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9760}
+      Script: {instanceID: 14812}
     - Class: 114
-      Script: {instanceID: 10006}
+      Script: {instanceID: 15060}
     - Class: 114
-      Script: {instanceID: 10010}
+      Script: {instanceID: 15064}
     - Class: 114
-      Script: {instanceID: 10060}
+      Script: {instanceID: 15108}
     - Class: 114
-      Script: {instanceID: 10210}
+      Script: {instanceID: 15248}
     - Class: 114
-      Script: {instanceID: 10356}
+      Script: {instanceID: 15534}
     - Class: 114
-      Script: {instanceID: 10490}
+      Script: {instanceID: 15564}
     - Class: 114
-      Script: {instanceID: 10520}
+      Script: {instanceID: 15676}
     - Class: 114
-      Script: {instanceID: 10628}
+      Script: {instanceID: 15744}
     - Class: 114
-      Script: {instanceID: 10692}
+      Script: {instanceID: 15912}
     - Class: 114
-      Script: {instanceID: 10854}
+      Script: {instanceID: 15984}
     - Class: 114
-      Script: {instanceID: 10920}
+      Script: {instanceID: 16074}
     - Class: 114
-      Script: {instanceID: 11008}
+      Script: {instanceID: 16320}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 16568}
     - Class: 114
-      Script: {instanceID: 11504}
+      Script: {instanceID: 16658}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 17216}
     - Class: 114
-      Script: {instanceID: 12142}
+      Script: {instanceID: 17410}
     - Class: 114
-      Script: {instanceID: 12330}
+      Script: {instanceID: 17430}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 17446}
     - Class: 114
-      Script: {instanceID: 12364}
+      Script: {instanceID: 19320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -119,6 +122,8 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -141,17 +146,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -162,46 +159,28 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9760}
+      Script: {instanceID: 14812}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 15060}
     - Class: 114
-      Script: {instanceID: 9930}
+      Script: {instanceID: 15108}
     - Class: 114
-      Script: {instanceID: 9938}
+      Script: {instanceID: 15676}
     - Class: 114
-      Script: {instanceID: 10006}
+      Script: {instanceID: 16266}
     - Class: 114
-      Script: {instanceID: 10018}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 10048}
+      Script: {instanceID: 17300}
     - Class: 114
-      Script: {instanceID: 10060}
-    - Class: 114
-      Script: {instanceID: 10308}
-    - Class: 114
-      Script: {instanceID: 10628}
-    - Class: 114
-      Script: {instanceID: 11118}
-    - Class: 114
-      Script: {instanceID: 11194}
-    - Class: 114
-      Script: {instanceID: 11612}
-    - Class: 114
-      Script: {instanceID: 11828}
-    - Class: 114
-      Script: {instanceID: 12226}
-    - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 17430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -888,6 +867,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 9b895dcabbc1faf095c000c32d471fd0
+    assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
+    namespaceName: UnityEngine.Networking
+    className: NetworkTransformChild
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -912,7 +897,13 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 20eeaeae829475b5e354d1f626c51a2b
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -962,4 +953,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Welcome.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: /home/maria/gitProjects/myFlat/test.apk
+  playerPath: E:/Users/Masha/Unity/Indoor-Navigation-AR/test.apk
